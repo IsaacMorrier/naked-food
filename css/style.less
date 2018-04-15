@@ -554,10 +554,7 @@ a:visited {
     font-style: italic !important;
     font-weight: 500 !important;
     color: @color-text-secondary !important;
-  }
-  
-  input.mce_inline_error {
-    border-bottom-color: @color-accent !important;
+    font-size: .8em;
   }
   
   #mc-embedded-subscribe {
@@ -599,19 +596,17 @@ a:visited {
     margin-right: .2em;
   }
   
-  #mce-error-response,
-  #mce-success-response {
-    margin-top: 1em;
-    transition: all .3s;
-  }
-  
   #mce-success-response {
     text-transform: uppercase;
+    position: relative;
+    top: -1em;
   }
   
   #mce-error-response {
     color: @color-text-secondary;
     font-style: italic;
+    font-size: .8em;
+    margin-top: 1em;
     a {
       text-decoration: underline;
     }

@@ -472,9 +472,7 @@ a:visited {
   font-style: italic !important;
   font-weight: 500 !important;
   color: #999999 !important;
-}
-#mc_embed_signup input.mce_inline_error {
-  border-bottom-color: orange !important;
+  font-size: .8em;
 }
 #mc_embed_signup #mc-embedded-subscribe {
   display: inline-block;
@@ -508,17 +506,16 @@ a:visited {
   top: .6em;
   margin-right: .2em;
 }
-#mc_embed_signup #mce-error-response,
-#mc_embed_signup #mce-success-response {
-  margin-top: 1em;
-  transition: all .3s;
-}
 #mc_embed_signup #mce-success-response {
   text-transform: uppercase;
+  position: relative;
+  top: -1em;
 }
 #mc_embed_signup #mce-error-response {
   color: #999999;
   font-style: italic;
+  font-size: .8em;
+  margin-top: 1em;
 }
 #mc_embed_signup #mce-error-response a {
   text-decoration: underline;
