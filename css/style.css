@@ -206,10 +206,12 @@ textarea {
 ::-moz-selection {
   background: orange;
   text-shadow: none;
+  color: white;
 }
 ::selection {
   background: orange;
   text-shadow: none;
+  color: white;
 }
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -414,32 +416,75 @@ a:visited {
 .hero-image {
   width: 70%;
   max-width: 1000px;
+  margin-bottom: 4em;
 }
-label {
+#mc_embed_signup {
+  font-size: 1.25em;
+}
+#mc_embed_signup #mce-EMAIL-label {
   text-transform: uppercase;
+  padding-right: .5em;
 }
-#mce-EMAIL {
-  background: none;
-  color: white !important;
+#mc_embed_signup #mce-EMAIL {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  border-radius: 0 !important;
-  outline: 0 !important;
-  border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-bottom: 2px solid white !important;
-}
-#mce-EMAIL.mce_inline_error {
-  border-bottom-color: orange;
-}
-#mc-embedded-subscribe {
-  padding: .25em 2em .25em .25em;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 2px solid white;
   background: none;
+  color: #999999;
+  font-size: .8em;
+  padding: .2em .2em 0 .2em;
+  margin-bottom: .2em;
+  transition: all 0.2s ease-out;
+}
+#mc_embed_signup #mce-EMAIL:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px black inset;
+  -webkit-text-fill-color: white !important;
+}
+#mc_embed_signup #mce-EMAIL:focus {
+  padding-bottom: .2em;
+  margin-bottom: 0;
+}
+#mc_embed_signup div.mce_inline_error {
+  background: none !important;
+  font-style: italic !important;
+  font-weight: 300 !important;
+  opacity: .5 !important;
+}
+#mc_embed_signup input.mce_inline_error {
+  border-bottom-color: orange !important;
+}
+#mc_embed_signup #mc-embedded-subscribe {
+  display: inline-block;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  color: white;
   text-transform: uppercase;
+  color: black !important;
+  background: black !important;
+  outline: none !important;
+  border: 0;
+  width: 0;
+  padding: 0;
+}
+#mc_embed_signup #mc-embedded-subscribe:hover,
+#mc_embed_signup #mc-embedded-subscribe:active,
+#mc_embed_signup #mc-embedded-subscribe:focus {
+  outline: none !important;
+}
+#mc_embed_signup #mce-submit-label-img {
+  height: 1em;
+  width: auto;
+}
+#mc_embed_signup #mce-success-response-img {
+  height: 2em;
+  width: auto;
+}
+#mc_embed_signup #mce-error-response,
+#mc_embed_signup #mce-success-response {
+  text-transform: uppercase;
+  margin-top: 1em;
 }
 /* ==========================================================================
    Helper classes

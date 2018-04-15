@@ -250,11 +250,13 @@ textarea {
 ::-moz-selection {
 	background: @color-accent;
 	text-shadow: none;
+  color: @color-text-primary;
 }
 
 ::selection {
 	background: @color-accent;
 	text-shadow: none;
+  color: @color-text-primary;
 }
 
 
@@ -442,6 +444,7 @@ hr {
 
 @color-background: black;
 @color-text-primary: white;
+@color-text-secondary: #999;
 @color-accent: orange;
 
 
@@ -492,33 +495,92 @@ a:visited {
 .hero-image {
 	width: 70%;
 	max-width: 1000px;
+  margin-bottom: 4em;
 }
 
-label {
-	text-transform: uppercase;
-}
-
-#mce-EMAIL {
-	background: none;
-	color: @color-text-primary !important;
-	.font-body;
-	border-radius: 0 !important;
-	outline: 0 !important;
-	border-top: none !important;
-	border-left: none !important;
-	border-right: none !important;
-	border-bottom: 2px solid @color-text-primary !important;
-	&.mce_inline_error {
-		border-bottom-color: @color-accent;
-	}
-}
-
-#mc-embedded-subscribe {
-	padding: .25em 2em .25em .25em;
-	background: none;
-	.font-body;
-	color: @color-text-primary;
-	text-transform: uppercase;
+#mc_embed_signup {
+  
+  font-size: 1.25em;
+  
+  #mce-EMAIL-label {
+    text-transform: uppercase;
+    padding-right: .5em;
+  }
+  
+  #mce-EMAIL {
+    .font-body;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid @color-text-primary;
+    background: none;
+    color: @color-text-secondary;
+    font-size: .8em;
+    padding: .2em .2em 0 .2em;
+    margin-bottom: .2em;
+    transition: all .2s ease-out;
+    
+    &:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0 30px @color-background inset;
+      -webkit-text-fill-color: @color-text-primary !important;
+    }
+    
+    &:focus {
+      padding-bottom: .2em;
+      margin-bottom: 0;
+    }
+    
+  }
+  
+  div.mce_inline_error {
+    background: none !important;
+    font-style: italic !important;
+    font-weight: 300 !important;
+    opacity: .5 !important;
+  }
+  
+  input.mce_inline_error {
+    border-bottom-color: @color-accent !important;
+  }
+  
+  #mc-embedded-subscribe {
+    display: inline-block;
+    
+    .font-body;
+    text-transform: uppercase;
+    color: @color-background !important;
+    
+    background: @color-background !important;
+    outline: none !important;
+    border: 0;
+    
+    width: 0;
+    padding: 0;
+    
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none !important;
+    }
+    
+  }
+  
+  #mce-submit-label-img {
+    height: 1em;
+    width: auto;
+  }
+  
+  #mce-success-response-img {
+    height: 2em;
+    width: auto;
+  }
+  
+  #mce-error-response,
+  #mce-success-response {
+    text-transform: uppercase;
+    margin-top: 1em;
+  }
+  
 }
 
 
