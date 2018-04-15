@@ -420,7 +420,7 @@ a:visited {
    ========================================================================== */
 .hero {
   text-align: center;
-  padding: 1em;
+  padding: 5em 1em 1em;
 }
 .hero-image {
   width: 70%;
@@ -439,6 +439,7 @@ a:visited {
   text-transform: uppercase;
   padding-right: .5em;
   display: block;
+  margin-bottom: .5em;
 }
 @media only screen and (min-width: 48em) {
   #mc_embed_signup #mce-EMAIL-label {
@@ -452,6 +453,7 @@ a:visited {
   border-right: 0;
   border-top: 0;
   border-bottom: 2px solid white;
+  border-radius: 0 !important;
   background: none;
   color: #999999;
   font-size: .8em;
