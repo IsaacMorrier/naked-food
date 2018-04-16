@@ -424,8 +424,9 @@ a:visited {
 }
 .hero-image {
   width: 70%;
-  max-width: 800px;
+  max-width: 600px;
   margin-bottom: 2em;
+  max-height: 60%;
 }
 @media only screen and (min-width: 48em) {
   .hero-image {
